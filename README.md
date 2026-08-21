@@ -9,6 +9,7 @@ Build strong frontend and backend development skills and eventually develop prod
 ## Technology Roadmap
 
 ### Frontend
+
 - HTML
 - CSS
 - JavaScript
@@ -16,12 +17,14 @@ Build strong frontend and backend development skills and eventually develop prod
 - React
 
 ### Backend
+
 - Node.js
 - Express.js
 - REST APIs
 - PostgreSQL
 
 ### Supporting Skills
+
 - Git & GitHub
 - Debugging
 - Testing
@@ -33,6 +36,7 @@ Build strong frontend and backend development skills and eventually develop prod
 ## Progress
 
 ### HTML
+
 - [x] HTML fundamentals
 - [x] Semantic HTML
 - [x] Links and images
@@ -41,6 +45,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Basic page structure
 
 ### CSS
+
 - [x] CSS fundamentals
 - [x] Box model
 - [x] Display
@@ -51,6 +56,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] CSS architecture
 
 ### JavaScript
+
 - [ ] Fundamentals
 - [ ] DOM manipulation
 - [ ] Events
@@ -59,6 +65,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Modern JavaScript
 
 ### TypeScript
+
 - [ ] Fundamentals
 - [ ] Types
 - [ ] Interfaces
@@ -66,6 +73,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Type-safe application development
 
 ### React
+
 - [ ] Components
 - [ ] Props and state
 - [ ] Hooks
@@ -74,6 +82,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Application architecture
 
 ### Backend
+
 - [ ] Node.js
 - [ ] Express.js
 - [ ] REST APIs
@@ -82,6 +91,39 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Security
 - [ ] Testing
 - [ ] Deployment
+
+## Learning Log
+
+### 21 August 2026 — CSS Grid & Responsive Layout
+
+Practiced and applied:
+
+- `display: grid`
+- `grid-template-columns`
+- `fr` units
+- `repeat()`
+- `gap`
+- Grid rows and implicit rows
+- Grid auto-placement
+- Grid lines and `grid-column`
+- Responsive layouts using media queries
+
+Applied CSS Grid to the existing learning page.
+
+Responsive behavior:
+
+- Desktop: three-column card layout
+- Narrow viewport (`max-width: 600px`): single-column card layout
+
+Tested different Grid configurations to understand:
+
+- How `fr` distributes available space
+- How Grid automatically places items into rows
+- How individual items can span grid tracks
+- How parent Grid rules interact with child placement rules
+- How conflicting Grid rules can cause layout problems and overflow
+
+Removed temporary experimental rules after understanding their behavior and kept the final implementation focused on the required responsive layout.
 
 ## Projects
 
