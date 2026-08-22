@@ -52,6 +52,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Flexbox
 - [x] CSS Grid
 - [x] Responsive design
+- [x] CSS Positioning
 - [ ] Advanced responsive layouts
 - [ ] CSS architecture
 
@@ -124,6 +125,27 @@ Tested different Grid configurations to understand:
 - How conflicting Grid rules can cause layout problems and overflow
 
 Removed temporary experimental rules after understanding their behavior and kept the final implementation focused on the required responsive layout.
+
+### 22 August 2026 — CSS Positioning
+
+Practiced and applied:
+
+- `position: relative`
+- `position: absolute`
+- `position: fixed`
+- `position: sticky`
+- `top`, `right`, `bottom`, and `left` offsets
+- Positioning relative to the nearest positioned ancestor
+- Difference between `absolute`, `fixed`, and `sticky` positioning
+- How `sticky` behaves relative to scrolling and its threshold
+
+Applied `position: sticky` to the existing section heading and verified its behavior while scrolling.
+
+Tested positioning behavior using temporary experiments with cards and pseudo-elements to understand how positioned elements interact with their containing elements.
+
+Removed temporary experimental code after understanding the behavior and kept the final implementation focused on the useful sticky positioning.
+
+Verified that the positioning changes did not break the existing responsive Grid layout.
 
 ## Projects
 

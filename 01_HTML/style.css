@@ -59,3 +59,7 @@ h1,h2{
     font-size: 20px;
     font-family:'Times New Roman', Times, serif ;
 }
+.section-heading{
+    position: sticky;
+    top: 0;
+}
