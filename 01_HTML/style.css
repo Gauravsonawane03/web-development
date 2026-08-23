@@ -35,15 +35,9 @@ h1,h2{
 }
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
     gap: 20px;
 }
-@media (max-width: 600px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-}
-
 .card {
     border: 2px solid black;
     padding: 20px;

@@ -53,7 +53,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] CSS Grid
 - [x] Responsive design
 - [x] CSS Positioning
-- [ ] Advanced responsive layouts
+- [x] Advanced responsive layouts
 - [ ] CSS architecture
 
 ### JavaScript
@@ -95,57 +95,23 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 21 August 2026 — CSS Grid & Responsive Layout
+### 23 August 2026 — Advanced Responsive Layouts
 
 Practiced and applied:
 
-- `display: grid`
-- `grid-template-columns`
-- `fr` units
-- `repeat()`
-- `gap`
-- Grid rows and implicit rows
-- Grid auto-placement
-- Grid lines and `grid-column`
-- Responsive layouts using media queries
+- `minmax()`
+- `auto-fit`
+- Responsive Grid without relying on a fixed breakpoint
+- Minimum Grid track sizing
+- How `gap` affects available space
+- Automatic changes in Grid column count as viewport width changes
+- Difference between `inline-block` wrapping and responsive CSS Grid
+- Identifying ineffective CSS properties when the required layout mode is not active
 
-Applied CSS Grid to the existing learning page.
+Applied:
 
-Responsive behavior:
-
-- Desktop: three-column card layout
-- Narrow viewport (`max-width: 600px`): single-column card layout
-
-Tested different Grid configurations to understand:
-
-- How `fr` distributes available space
-- How Grid automatically places items into rows
-- How individual items can span grid tracks
-- How parent Grid rules interact with child placement rules
-- How conflicting Grid rules can cause layout problems and overflow
-
-Removed temporary experimental rules after understanding their behavior and kept the final implementation focused on the required responsive layout.
-
-### 22 August 2026 — CSS Positioning
-
-Practiced and applied:
-
-- `position: relative`
-- `position: absolute`
-- `position: fixed`
-- `position: sticky`
-- `top`, `right`, `bottom`, and `left` offsets
-- Positioning relative to the nearest positioned ancestor
-- Difference between `absolute`, `fixed`, and `sticky` positioning
-- How `sticky` behaves relative to scrolling and its threshold
-
-Applied `position: sticky` to the existing section heading and verified its behavior while scrolling.
-
-Tested positioning behavior using temporary experiments with cards and pseudo-elements to understand how positioned elements interact with their containing elements.
-
-Removed temporary experimental code after understanding the behavior and kept the final implementation focused on the useful sticky positioning.
-
-Verified that the positioning changes did not break the existing responsive Grid layout.
+```css
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
 ## Projects
 
