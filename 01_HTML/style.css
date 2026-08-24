@@ -27,28 +27,28 @@ p{
 h1,h2{
     font-family: Arial, Helvetica, sans-serif;
 }
-.box {
+.practice-box {
     display: inline-block;
     border: 2px solid black;
     padding: 20px;
     width: 300px;
 }
-.cards {
+.learning-cards {
     display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));   
     gap: 20px;
 }
-.card {
+.learning-card {
     border: 2px solid black;
     padding: 20px;
 }
-.Display {
+.learning-section {
     background-color:blueviolet;
     padding: 20px;
     margin: 10px;
     border: 4px grey;
 }
-.display-heading{
+.learning-section-heading{
     color:rgb(255, 0, 0);
     font-size: 20px;
     font-family:'Times New Roman', Times, serif ;

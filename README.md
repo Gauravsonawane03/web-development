@@ -95,23 +95,27 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 23 August 2026 — Advanced Responsive Layouts
+### 24 August 2026 — CSS Architecture and Maintainable Selectors
 
 Practiced and applied:
 
-- `minmax()`
-- `auto-fit`
-- Responsive Grid without relying on a fixed breakpoint
-- Minimum Grid track sizing
-- How `gap` affects available space
-- Automatic changes in Grid column count as viewport width changes
-- Difference between `inline-block` wrapping and responsive CSS Grid
-- Identifying ineffective CSS properties when the required layout mode is not active
+- Semantic CSS class naming
+- Choosing class names based on the purpose of an element
+- Difference between generic names and meaningful names
+- Keeping CSS selectors easy to understand and maintain
+- Connecting CSS selectors clearly to their corresponding HTML elements
 
-Applied:
+Renamed and applied:
 
-```css
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+- `.practice-box` — responsive design practice boxes
+- `.learning-section` — overall learning category section
+- `.learning-section-heading` — heading for the learning section
+- `.learning-cards` — container for the learning cards
+- `.learning-card` — individual learning block
+
+Applied the selector naming improvements to the existing HTML and CSS without changing the intended layout.
+
+Verified that the renamed selectors preserve the existing page layout and functionality.
 
 ## Projects
 
