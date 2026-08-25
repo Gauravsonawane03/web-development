@@ -54,7 +54,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Responsive design
 - [x] CSS Positioning
 - [x] Advanced responsive layouts
-- [ ] CSS architecture
+- [x] CSS architecture
 
 ### JavaScript
 
@@ -95,27 +95,27 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 24 August 2026 — CSS Architecture and Maintainable Selectors
+### 25 August 2026 — CSS Architecture & Box Model
 
 Practiced and applied:
 
-- Semantic CSS class naming
-- Choosing class names based on the purpose of an element
-- Difference between generic names and meaningful names
-- Keeping CSS selectors easy to understand and maintain
-- Connecting CSS selectors clearly to their corresponding HTML elements
+- CSS architecture based on selector responsibility
+- Organizing CSS into Base, Elements, Components, and Modifiers
+- Descriptive class naming based on element purpose
+- Distinguishing general element styles from component-specific styles
+- Removing unused CSS selectors
+- Removing unnecessary classes
+- Combining duplicate selector rules
+- `box-sizing: border-box`
+- Difference between `content-box` and `border-box`
+- How width, padding, and border determine an element's total size
+- How `inline-block` elements wrap when available horizontal space is insufficient
 
-Renamed and applied:
+Applied the architecture structure to the existing CSS without changing the intended page design.
 
-- `.practice-box` — responsive design practice boxes
-- `.learning-section` — overall learning category section
-- `.learning-section-heading` — heading for the learning section
-- `.learning-cards` — container for the learning cards
-- `.learning-card` — individual learning block
+Applied `box-sizing: border-box` to `.practice-box` and verified its effect on the total box dimensions.
 
-Applied the selector naming improvements to the existing HTML and CSS without changing the intended layout.
-
-Verified that the renamed selectors preserve the existing page layout and functionality.
+Verified that the existing responsive behavior continues to work without unnecessary media queries.
 
 ## Projects
 
