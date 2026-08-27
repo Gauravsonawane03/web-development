@@ -65,7 +65,7 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ### JavaScript
 
-- [ ] Fundamentals
+- [x] Fundamentals
 - [ ] DOM manipulation
 - [ ] Events
 - [ ] Async JavaScript
@@ -102,30 +102,45 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 26 August 2026 — HTML & CSS Foundation Verification
+### 27 August 2026 — JavaScript Fundamentals
 
 Practiced and verified:
 
-- HTML table structure using `table`, `tr`, `th`, and `td`
-- Difference between table header cells and data cells
-- Semantic HTML and the purpose of elements such as `section`
-- Basic accessibility concepts
-- Meaningful `alt` text for images
-- Associating form labels with inputs using `for` and `id`
-- Useful HTML attributes such as `type`, `name`, `id`, `href`, `src`, and `alt`
-- CSS cascade
-- CSS specificity
-- CSS inheritance
-- Difference between percentage units and viewport units
-- `rem` relative to the root element's font size
+- JavaScript variables and declarations
+- Primitive values and basic operators
+- Conditional statements
+- `for` loops
+- Functions and parameters
+- Function return values
+- Basic arrays
+- Array indexing
+- Array length
+- Iterating through arrays
+- Basic objects
+- Object properties
+- Accessing object properties using dot notation
+- Small standalone exercises combining loops, conditionals, functions, arrays, and objects
 
-Verified how CSS rules interact when multiple selectors apply to the same element.
+Implemented and tested functions for:
 
-Applied a semantic HTML improvement by changing the learning category container from a generic `div` to a `section` while preserving the existing CSS class and layout.
+- Summing even numbers
+- Summing odd numbers
+- Counting even numbers
+- Checking whether a number is prime
 
-Used small standalone examples to verify CSS concepts without adding unnecessary code to the project.
+Practiced arrays by:
 
-Completed the remaining HTML and CSS foundation verification required before beginning JavaScript fundamentals.
+- Accessing elements by index
+- Modifying array elements
+- Iterating through an array
+- Calculating an array sum
+- Finding the largest value in an array
+
+Practiced objects by creating and accessing structured data such as books, students, and mobile phones.
+
+Used Node.js to execute the JavaScript exercises and debugged a scope-related `ReferenceError` during the function practice.
+
+Completed the planned JavaScript fundamentals practice for today.
 
 ## Projects
 
