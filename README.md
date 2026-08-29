@@ -102,45 +102,34 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 27 August 2026 — JavaScript Fundamentals
+### 29 August 2026 — JavaScript Fundamentals Practice
 
-Practiced and verified:
-
-- JavaScript variables and declarations
-- Primitive values and basic operators
-- Conditional statements
-- `for` loops
-- Functions and parameters
-- Function return values
-- Basic arrays
-- Array indexing
-- Array length
-- Iterating through arrays
-- Basic objects
-- Object properties
-- Accessing object properties using dot notation
-- Small standalone exercises combining loops, conditionals, functions, arrays, and objects
+Continued practicing JavaScript fundamentals through small exercises involving arrays of objects, loops, conditionals, functions, and return values.
 
 Implemented and tested functions for:
 
-- Summing even numbers
-- Summing odd numbers
-- Counting even numbers
-- Checking whether a number is prime
+- Finding students with marks above a given threshold
+- Finding products above a given price
+- Calculating the total price of products
+- Classifying products as expensive or affordable
+- Returning an array of affordable product names
+- Returning an array containing all product names
 
-Practiced arrays by:
+Practiced and reinforced:
 
-- Accessing elements by index
-- Modifying array elements
-- Iterating through an array
-- Calculating an array sum
-- Finding the largest value in an array
+- Accessing properties of objects inside arrays
+- Iterating through arrays of objects
+- Using `if/else` conditions with object properties
+- Accumulating values with a variable
+- Creating an empty array to collect results
+- Using `.push()` to add elements to an array
+- Returning a value after completing a loop
+- Understanding the difference between `console.log()` and `return`
+- Debugging syntax and logic errors using Node.js
 
-Practiced objects by creating and accessing structured data such as books, students, and mobile phones.
+Initially attempted to build the affordable-products result incorrectly, then corrected the approach by using an array and `.push()` to collect multiple matching product names.
 
-Used Node.js to execute the JavaScript exercises and debugged a scope-related `ReferenceError` during the function practice.
-
-Completed the planned JavaScript fundamentals practice for today.
+Tested the functions successfully using Node.js and verified the expected output.
 
 ## Projects
 

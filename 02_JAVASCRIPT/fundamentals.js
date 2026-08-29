@@ -170,34 +170,122 @@
 
 //--------objects--------------------//
 
-let book = {
-    title : "JAVASCRIPT",
-    author: "GAURAV",
-    price: 1000,
-};
-let student = {
-    name: "Gaurav",
-    age: 23,
-    marks: 90,
-    branch: "ENTC"
-};
-let mobile={
-    version: "ios 17",
-    manufactured: "sept 25",
-    price: 12500,
-};
-console.log(book.title);
-console.log(book.author);
-console.log(book.price);
+// let book = {
+//     title : "JAVASCRIPT",
+//     author: "GAURAV",
+//     price: 1000,
+// };
+// let student = {
+//     name: "Gaurav",
+//     age: 23,
+//     marks: 90,
+//     branch: "ENTC"
+// };
+// let mobile={
+//     version: "ios 17",
+//     manufactured: "sept 25",
+//     price: 12500,
+// };
+// console.log(book.title);
+// console.log(book.author);
+// console.log(book.price);
 
-console.log(student.name);
-console.log(student.age);
-console.log(student.branch);
-console.log(student.marks);
+// console.log(student.name);
+// console.log(student.age);
+// console.log(student.branch);
+// console.log(student.marks);
 
-console.log(mobile.version);
-console.log(mobile.manufactured);
-console.log(mobile.price);
+// console.log(mobile.version);
+// console.log(mobile.manufactured);
+// console.log(mobile.price);
+
+//---------practice-1-------//
+
+// let numbers = [12, 5, 8, 21, 4, 17, 10, 3];
+
+// function getEvenNumbers(numbers) {
+//     for(let i=0;i<numbers.length;i++){
+//         if(numbers[i]%2===0){
+//           console.log(numbers[i]);
+//         }
+        
+//     }
+// }
+
+// console.log(getEvenNumbers(numbers));
+
+
+//----------------Practice-2----------//
+
+// let students = [
+//     { name: "Gaurav", marks: 90 },
+//     { name: "Rahul", marks: 72 },
+//     { name: "Amit", marks: 85 },
+//     { name: "Neha", marks: 65 }
+// ];
+// function getTopStudents(students) {
+//     for(let i=0;i<students.length;i++){
+//         if(students[i].marks>=80){
+//             console.log(students[i].name);
+//             console.log(students[i].marks);
+//         }
+//     }
+// }
+
+// getTopStudents(students);
+
+//----------practice-3-------------//
+
+let products = [
+    { name: "Laptop", price: 50000 },
+    { name: "Mouse", price: 800 },
+    { name: "Keyboard", price: 1500 },
+    { name: "Monitor", price: 12000 }
+];
+function getExpensiveProducts(products) {
+    for(let i=0;i<products.length;i++){
+        if(products[i].price > 5000){
+            console.log(products[i].name);
+        }
+    }
+}
+function getTotalPrice(products){
+    let total=0;
+    for(let i=0;i<products.length;i++){
+        total+=products[i].price;
+    }
+    console.log(total);
+}
+
+function getProductStatus(products){
+    for(let i=0;i<products.length;i++){
+        if(products[i].price >= 10000){
+            console.log("EXPENSIVE: ",products[i].name);
+        }else{
+            console.log("AFFORDABLE: ",products[i].name);
+        }
+    }
+}
+
+function getAffordableProducts(products){
+    let affordable=[];
+    for(let i=0;i<products.length;i++){
+        if(products[i].price < 10000){
+          affordable.push(products[i].name);
+        }
+    }
+    return affordable;
+}
+// console.log(getAffordableProducts(products));
+
+function getProductNames(products){
+    let names=[];
+    for(let i=0;i<products.length;i++){
+       names.push(products[i].name);
+    }
+    return names;
+}
+console.log(getProductNames(products));
 
 
 
