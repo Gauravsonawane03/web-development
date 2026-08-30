@@ -276,7 +276,6 @@ function getAffordableProducts(products){
     }
     return affordable;
 }
-// console.log(getAffordableProducts(products));
 
 function getProductNames(products){
     let names=[];
@@ -285,7 +284,72 @@ function getProductNames(products){
     }
     return names;
 }
-console.log(getProductNames(products));
 
 
+let names=products.map(function(product) {
+    return product.name;
+});
+// console.log(names);
 
+let expensive = products.filter(function(product) {
+    return product.price>=10000;
+});
+
+// console.log(expensive);
+
+let cheapProducts = products.filter(function(product){
+    return product.price<2000;
+});
+
+// console.log(cheapProducts);
+
+let findproduct = products.find(function(product){
+    return product.price > 10000;
+});
+
+// console.log(findproduct);
+
+let cheapProd= products.filter(function(product){
+    return product.price < 2000;
+});
+
+// console.log(cheapProd);
+
+let affordableProductNames=products.filter(function(product){
+    return product.price<10000;
+}) .map(function(product){
+    return product.name;
+});
+
+// console.log(affordableProductNames);
+
+function getAffordableProductNames(products) {
+    let result=products.filter(function(product){
+    return product.price>10000;
+}) .map(function(product){
+    return product.name;
+});
+return result;
+}
+// console.log(getAffordableProductNames(products));
+
+function findProductByName(products, name) {
+    let result = products.find(function(product) {
+        return product.name===name;
+    });
+
+    return result;
+}
+// console.log(findProductByName(products, "Phone"));
+// console.log(findProductByName(products, "Mouse"));
+
+function getAffordableProductNames(products, maxPrice){
+    let result= products.filter(function(product){
+            return product.price<maxPrice;
+    }).map(function(product){
+        
+        return product.name;
+    });
+    return result;
+}
+console.log(getAffordableProductNames(products,10000));

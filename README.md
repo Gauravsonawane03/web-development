@@ -102,34 +102,28 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 29 August 2026 — JavaScript Fundamentals Practice
+### 30 August 2026 — JavaScript Fundamentals
 
-Continued practicing JavaScript fundamentals through small exercises involving arrays of objects, loops, conditionals, functions, and return values.
+Practiced and verified:
+
+- Functions as reusable logic
+- Arrays of objects
+- `map()`, `filter()`, and `find()`
+- Combining functions with array operations
+- Returning values cleanly
+- Debugging incorrect results
 
 Implemented and tested functions for:
 
-- Finding students with marks above a given threshold
-- Finding products above a given price
-- Calculating the total price of products
-- Classifying products as expensive or affordable
-- Returning an array of affordable product names
-- Returning an array containing all product names
+- Extracting product names using `map()`
+- Filtering products by price using `filter()`
+- Finding products by name using `find()`
+- Combining `filter()` and `map()` to return affordable product names
+- Finding and correcting incorrect filtering and mapping logic
 
-Practiced and reinforced:
+Used Node.js to run and verify the JavaScript exercises.
 
-- Accessing properties of objects inside arrays
-- Iterating through arrays of objects
-- Using `if/else` conditions with object properties
-- Accumulating values with a variable
-- Creating an empty array to collect results
-- Using `.push()` to add elements to an array
-- Returning a value after completing a loop
-- Understanding the difference between `console.log()` and `return`
-- Debugging syntax and logic errors using Node.js
-
-Initially attempted to build the affordable-products result incorrectly, then corrected the approach by using an array and `.push()` to collect multiple matching product names.
-
-Tested the functions successfully using Node.js and verified the expected output.
+Completed the planned JavaScript fundamentals practice for today.
 
 ## Projects
 
