@@ -352,4 +352,15 @@ function getAffordableProductNames(products, maxPrice){
     });
     return result;
 }
-console.log(getAffordableProductNames(products,10000));
+// console.log(getAffordableProductNames(products,10000));
+
+console.log("JavaScript connected");
+const heading = document.querySelector("h1");
+console.log(heading);
+const button = document.querySelector("button");
+const image = document.querySelector("img");
+button.addEventListener("click",function(){
+    heading.textContent="learning Javascript";
+    heading.classList.add("highlight");
+    image.setAttribute("alt", "GitHub Profile Clicked");
+});

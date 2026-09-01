@@ -102,28 +102,29 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 30 August 2026 — JavaScript Fundamentals
+### 1 September 2026 — JavaScript DOM Fundamentals
 
 Practiced and verified:
 
-- Functions as reusable logic
-- Arrays of objects
-- `map()`, `filter()`, and `find()`
-- Combining functions with array operations
-- Returning values cleanly
-- Debugging incorrect results
+- What the DOM represents
+- Selecting HTML elements using `querySelector()`
+- Reading and updating element content using `textContent`
+- Accessing and modifying CSS classes using `classList`
+- Changing HTML attributes using `setAttribute()`
+- Handling browser events using `addEventListener()`
+- Understanding the relationship between HTML, the DOM, JavaScript, and the changed webpage
 
-Implemented and tested functions for:
+Implemented and tested a DOM interaction where:
 
-- Extracting product names using `map()`
-- Filtering products by price using `filter()`
-- Finding products by name using `find()`
-- Combining `filter()` and `map()` to return affordable product names
-- Finding and correcting incorrect filtering and mapping logic
+- JavaScript selects the heading and button from the HTML document
+- A button click triggers an event handler
+- The heading text changes to `"Learning Javascript"`
+- A `highlight` class is added to the heading
+- An image element is selected and its `alt` attribute is modified
 
-Used Node.js to run and verify the JavaScript exercises.
+Used the existing webpage to practice DOM interaction rather than creating disconnected exercises.
 
-Completed the planned JavaScript fundamentals practice for today.
+Completed the planned JavaScript DOM fundamentals practice for today.
 
 ## Projects
 
