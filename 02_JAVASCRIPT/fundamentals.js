@@ -364,3 +364,20 @@ button.addEventListener("click",function(){
     heading.classList.add("highlight");
     image.setAttribute("alt", "GitHub Profile Clicked");
 });
+image.addEventListener("mouseover",function(event){
+    event.target.setAttribute("alt", "GitHub image hovered");
+     event.target.classList.add("highlight");
+});
+image.addEventListener("mouseleave", function(event){
+    event.target.classList.remove("highlight");
+});
+const hideLearningButton = document.querySelector("#hideLearningButton");
+const learningCards = document.querySelector(".learning-cards");
+hideLearningButton.addEventListener("click", function() {
+        learningCards.classList.toggle("hidden");
+        if (learningCards.classList.contains("hidden")) {
+            hideLearningButton.textContent="show learning";
+} else {
+    hideLearningButton.textContent="hide learning";
+}
+});

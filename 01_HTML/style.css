@@ -66,3 +66,10 @@ h1,h2{
     background-color: darkblue;
 }
 
+.highlight{
+    border: 5px solid blue;
+}
+
+.hidden {
+    display: none;
+}

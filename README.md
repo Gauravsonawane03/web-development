@@ -66,8 +66,8 @@ Build strong frontend and backend development skills and eventually develop prod
 ### JavaScript
 
 - [x] Fundamentals
-- [ ] DOM manipulation
-- [ ] Events
+- [x] DOM manipulation
+- [x] Events
 - [ ] Async JavaScript
 - [ ] APIs
 - [ ] Modern JavaScript
@@ -102,29 +102,30 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 1 September 2026 — JavaScript DOM Fundamentals
+### 2 September 2026 — JavaScript DOM + Events
 
 Practiced and verified:
 
-- What the DOM represents
-- Selecting HTML elements using `querySelector()`
-- Reading and updating element content using `textContent`
-- Accessing and modifying CSS classes using `classList`
-- Changing HTML attributes using `setAttribute()`
-- Handling browser events using `addEventListener()`
-- Understanding the relationship between HTML, the DOM, JavaScript, and the changed webpage
+- Event handling beyond a single button click
+- `mouseover` and `mouseleave` events
+- Understanding the `event` object
+- Using `event.target` to access the element that triggered an event
+- Event-driven state changes
+- Combining DOM selection, functions, and events
+- Using `classList.add()` and `classList.remove()`
+- Using `classList.toggle()` to change UI state
+- Using `classList.contains()` to check the current state
+- Updating button text dynamically with `textContent`
 
-Implemented and tested a DOM interaction where:
+Implemented and tested interactive DOM behavior in the existing webpage:
 
-- JavaScript selects the heading and button from the HTML document
-- A button click triggers an event handler
-- The heading text changes to `"Learning Javascript"`
-- A `highlight` class is added to the heading
-- An image element is selected and its `alt` attribute is modified
+- Added a hover interaction to the profile image
+- Added and removed a visual highlight class based on mouse events
+- Built a learning-section show/hide interaction
+- Kept the control button visible while hiding the learning cards
+- Changed the button text between `"Hide Learning"` and `"Show Learning"` based on the current state
 
-Used the existing webpage to practice DOM interaction rather than creating disconnected exercises.
-
-Completed the planned JavaScript DOM fundamentals practice for today.
+Completed the planned JavaScript DOM + Events practice for today.
 
 ## Projects
 
