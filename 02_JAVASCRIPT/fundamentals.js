@@ -381,3 +381,16 @@ hideLearningButton.addEventListener("click", function() {
     hideLearningButton.textContent="hide learning";
 }
 });
+const contact=document.querySelector("#name");
+
+contact.addEventListener("input", function(event) {
+    nameMessage.textContent = event.target.value;
+});
+
+const nameMessage = document.querySelector("#nameMessage");
+const email=document.querySelector("#email");
+const emailMessage = document.querySelector("#emailMessage");
+const contactButton = document.querySelector("#contactButton");
+contactButton.addEventListener("click",function(){
+     emailMessage.textContent = email.value;
+});

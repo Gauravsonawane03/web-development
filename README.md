@@ -102,28 +102,26 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 2 September 2026 — JavaScript DOM + Events
+### 3 September 2026 — JavaScript DOM + Events
 
 Practiced and verified:
 
-- Event handling beyond a single button click
-- `mouseover` and `mouseleave` events
-- Understanding the `event` object
-- Using `event.target` to access the element that triggered an event
-- Event-driven state changes
-- Combining DOM selection, functions, and events
-- Using `classList.add()` and `classList.remove()`
-- Using `classList.toggle()` to change UI state
-- Using `classList.contains()` to check the current state
-- Updating button text dynamically with `textContent`
+- Event handling
+- `event.target`
+- Functions interacting with DOM state
+- Reading user input from elements
+- Updating the page based on user input
+- Basic form/input interaction
 
-Implemented and tested interactive DOM behavior in the existing webpage:
+Implemented and tested an interactive form feature in the existing webpage:
 
-- Added a hover interaction to the profile image
-- Added and removed a visual highlight class based on mouse events
-- Built a learning-section show/hide interaction
-- Kept the control button visible while hiding the learning cards
-- Changed the button text between `"Hide Learning"` and `"Show Learning"` based on the current state
+- Added live name display using the `input` event
+- Used `event.target.value` to read the user's name
+- Added an email interaction using the `click` event
+- Used `email.value` to read the user's email
+- Updated the webpage dynamically using `textContent`
+- Combined DOM selection, events, input values, functions, and DOM updates
+- Debugged and verified the interaction using the browser console
 
 Completed the planned JavaScript DOM + Events practice for today.
 
