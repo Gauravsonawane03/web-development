@@ -387,10 +387,19 @@ contact.addEventListener("input", function(event) {
     nameMessage.textContent = event.target.value;
 });
 
-const nameMessage = document.querySelector("#nameMessage");
-const email=document.querySelector("#email");
-const emailMessage = document.querySelector("#emailMessage");
-const contactButton = document.querySelector("#contactButton");
-contactButton.addEventListener("click",function(){
-     emailMessage.textContent = email.value;
+
+const contactForm = document.querySelector("#contactForm");
+const formMessage = document.querySelector("#formMessage");
+
+contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.querySelector("#name").value;
+    const email = document.querySelector("#email").value;
+
+    if (name === "" || email === "") {
+        formMessage.textContent = "Please fill in all fields.";
+    } else {
+        formMessage.textContent = "Form submitted successfully.";
+    }
 });

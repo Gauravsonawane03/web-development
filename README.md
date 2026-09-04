@@ -102,28 +102,28 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 3 September 2026 — JavaScript DOM + Events
+### 4 September 2026 — JavaScript Forms + Validation
 
 Practiced and verified:
 
-- Event handling
-- `event.target`
-- Functions interacting with DOM state
-- Reading user input from elements
-- Updating the page based on user input
-- Basic form/input interaction
+- Forms
+- Reading form/input values
+- Basic validation
+- Preventing incorrect submission
+- Updating the UI based on validation results
 
-Implemented and tested an interactive form feature in the existing webpage:
+Implemented and tested a form validation feature in the existing webpage:
 
-- Added live name display using the `input` event
-- Used `event.target.value` to read the user's name
-- Added an email interaction using the `click` event
-- Used `email.value` to read the user's email
+- Added a `submit` event listener to the contact form
+- Used `event.preventDefault()` to prevent the default form submission
+- Read the `name` and `email` input values
+- Checked whether required fields were empty
+- Displayed validation feedback when fields were incomplete
+- Displayed a success message when the form passed validation
 - Updated the webpage dynamically using `textContent`
-- Combined DOM selection, events, input values, functions, and DOM updates
-- Debugged and verified the interaction using the browser console
+- Tested the form with both valid and invalid input cases
 
-Completed the planned JavaScript DOM + Events practice for today.
+Completed the planned JavaScript Forms + Validation practice for today.
 
 ## Projects
 
