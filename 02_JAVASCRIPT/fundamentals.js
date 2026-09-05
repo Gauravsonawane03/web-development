@@ -403,3 +403,22 @@ contactForm.addEventListener("submit", function(event) {
         formMessage.textContent = "Form submitted successfully.";
     }
 });
+
+const signup= document.querySelector("#signup");
+const feedback=document.querySelector("#feedback");
+
+signup.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    console.log(document.querySelector("#username"));
+    console.log(document.querySelector("#signupEmail"));
+
+    const username=document.querySelector("#username").value;
+    const email=document.querySelector("#signupEmail").value;
+
+    if(username=== "" || email === "") {
+        feedback.textContent="please fill in all fields.";
+    }else{
+         feedback.textContent = "signup done successfully.";
+    }
+});

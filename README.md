@@ -102,28 +102,32 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 4 September 2026 — JavaScript Forms + Validation
+### 5 September 2026 — JavaScript Forms + Validation Re-practice
 
-Practiced and verified:
+Re-practiced and verified:
 
 - Forms
 - Reading form/input values
+- Handling `submit`
+- Using `event.preventDefault()`
 - Basic validation
-- Preventing incorrect submission
-- Updating the UI based on validation results
+- Displaying valid/invalid feedback
+- Testing edge cases
 
-Implemented and tested a form validation feature in the existing webpage:
+Rebuilt and tested the form validation interaction in the existing webpage:
 
-- Added a `submit` event listener to the contact form
+- Added a `submit` event listener to the signup form
 - Used `event.preventDefault()` to prevent the default form submission
-- Read the `name` and `email` input values
+- Read the `username` and `email` input values
 - Checked whether required fields were empty
 - Displayed validation feedback when fields were incomplete
 - Displayed a success message when the form passed validation
 - Updated the webpage dynamically using `textContent`
-- Tested the form with both valid and invalid input cases
+- Tested empty, partially filled, and valid form submissions
+- Debugged a `querySelector()` issue caused by a missing `#` in the ID selector
+- Verified the form interaction in the browser
 
-Completed the planned JavaScript Forms + Validation practice for today.
+Completed the planned JavaScript Forms + Validation re-practice for today.
 
 ## Projects
 
