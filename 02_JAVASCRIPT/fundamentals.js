@@ -422,3 +422,22 @@ signup.addEventListener("submit",function(event){
          feedback.textContent = "signup done successfully.";
     }
 });
+
+const textinput=document.querySelector("#textInput");
+const charcount=document.querySelector("#characterCount");
+const wordcount=document.querySelector("#wordCount");
+const counterfeedback=document.querySelector("#counterFeedback");
+
+function updateCounter(text) {
+     const characters = text.length;
+
+    const words = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
+
+    charcount.textContent = "Characters: " + characters;
+    wordcount.textContent = "Words: " + words;
+
+    counterfeedback.textContent = "Keep typing...";
+}
+textinput.addEventListener("input", function() {
+    updateCounter(textinput.value);
+});

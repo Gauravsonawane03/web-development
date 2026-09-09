@@ -68,6 +68,10 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Fundamentals
 - [x] DOM manipulation
 - [x] Events
+- [x] Forms
+- [x] Input handling
+- [x] Basic validation
+- [x] DOM state + JavaScript logic
 - [ ] Async JavaScript
 - [ ] APIs
 - [ ] Modern JavaScript
@@ -102,32 +106,20 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 5 September 2026 — JavaScript Forms + Validation Re-practice
+### 9 September 2026 — JavaScript DOM State + Logic
 
-Re-practiced and verified:
+Built and tested a small browser feature integrating previously learned JavaScript concepts:
 
-- Forms
-- Reading form/input values
-- Handling `submit`
-- Using `event.preventDefault()`
-- Basic validation
-- Displaying valid/invalid feedback
-- Testing edge cases
+- Read user input from a textarea
+- Processed input using a JavaScript function
+- Calculated character and word counts
+- Updated the DOM dynamically
+- Used an input event to update the UI while typing
+- Displayed feedback based on the current input
+- Tested the feature directly in the browser
+- Debugged and verified the final interaction
 
-Rebuilt and tested the form validation interaction in the existing webpage:
-
-- Added a `submit` event listener to the signup form
-- Used `event.preventDefault()` to prevent the default form submission
-- Read the `username` and `email` input values
-- Checked whether required fields were empty
-- Displayed validation feedback when fields were incomplete
-- Displayed a success message when the form passed validation
-- Updated the webpage dynamically using `textContent`
-- Tested empty, partially filled, and valid form submissions
-- Debugged a `querySelector()` issue caused by a missing `#` in the ID selector
-- Verified the form interaction in the browser
-
-Completed the planned JavaScript Forms + Validation re-practice for today.
+Completed the planned JavaScript DOM State + JavaScript Logic integration task for today.
 
 ## Projects
 
