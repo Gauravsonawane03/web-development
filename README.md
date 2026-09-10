@@ -72,6 +72,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Input handling
 - [x] Basic validation
 - [x] DOM state + JavaScript logic
+- [x] localStorage
 - [ ] Async JavaScript
 - [ ] APIs
 - [ ] Modern JavaScript
@@ -106,20 +107,32 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 9 September 2026 — JavaScript DOM State + Logic
+### 10 September 2026 — JavaScript localStorage
 
-Built and tested a small browser feature integrating previously learned JavaScript concepts:
+Learned and practiced:
 
-- Read user input from a textarea
-- Processed input using a JavaScript function
-- Calculated character and word counts
-- Updated the DOM dynamically
-- Used an input event to update the UI while typing
-- Displayed feedback based on the current input
-- Tested the feature directly in the browser
-- Debugged and verified the final interaction
+- Browser storage and why `localStorage` exists
+- `setItem()`
+- `getItem()`
+- `removeItem()`
+- String-based storage
+- `JSON.stringify()`
+- `JSON.parse()`
+- Connecting stored data with the DOM/UI
 
-Completed the planned JavaScript DOM State + JavaScript Logic integration task for today.
+Built and tested a persistent signup feature:
+
+- Stored signup username and email in `localStorage`
+- Stored username and email together as a JavaScript object
+- Used `JSON.stringify()` to convert the object into a string for storage
+- Used `JSON.parse()` to convert stored data back into a JavaScript object
+- Verified that stored data persisted after page reload
+- Read the stored user data using `getItem()`
+- Updated the webpage dynamically using the stored username
+- Displayed a `Welcome back` message using the stored data
+- Tested and verified the complete interaction in the browser
+
+Completed the planned JavaScript localStorage task for today.
 
 ## Projects
 

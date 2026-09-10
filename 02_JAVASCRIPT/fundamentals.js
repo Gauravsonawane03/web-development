@@ -37,7 +37,7 @@
 //   console.log("Adult");
 // } else if (age >= 13) {
 //   console.log("Teenager.");
-// } else 
+// } else
 //   console.log("Child.");
 
 //----------------loops--------------//
@@ -47,13 +47,11 @@
 // }
 //  console.log(sum);
 
-
 // let i=10;
 //  while(i>=1){
 //   console.log(i);
 //   i--;
 //  }
-
 
 //  for(let i=1;i<10;i++){
 //   if(i===5){
@@ -63,7 +61,6 @@
 //   }
 //   console.log(i);
 //  }
-
 
 //-------------Functions----------//
 
@@ -83,7 +80,6 @@
 // }
 // let result = isEven(8);
 // console.log(result);
-
 
 // function sumEvenNumbers(n){
 //   let sum=0
@@ -139,8 +135,7 @@
 //  console.log(isPrime(10));
 //  console.log(isPrime(2));
 
-
- //---------ARRAYS----------------------//
+//---------ARRAYS----------------------//
 
 //  let numbers=[10,20,30,40,50];
 //  console.log(numbers[0]);
@@ -166,7 +161,6 @@
 //   }
 //  }
 //  console.log(largest);
-
 
 //--------objects--------------------//
 
@@ -208,12 +202,11 @@
 //         if(numbers[i]%2===0){
 //           console.log(numbers[i]);
 //         }
-        
+
 //     }
 // }
 
 // console.log(getEvenNumbers(numbers));
-
 
 //----------------Practice-2----------//
 
@@ -237,120 +230,124 @@
 //----------practice-3-------------//
 
 let products = [
-    { name: "Laptop", price: 50000 },
-    { name: "Mouse", price: 800 },
-    { name: "Keyboard", price: 1500 },
-    { name: "Monitor", price: 12000 }
+  { name: "Laptop", price: 50000 },
+  { name: "Mouse", price: 800 },
+  { name: "Keyboard", price: 1500 },
+  { name: "Monitor", price: 12000 },
 ];
 function getExpensiveProducts(products) {
-    for(let i=0;i<products.length;i++){
-        if(products[i].price > 5000){
-            console.log(products[i].name);
-        }
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price > 5000) {
+      console.log(products[i].name);
     }
+  }
 }
-function getTotalPrice(products){
-    let total=0;
-    for(let i=0;i<products.length;i++){
-        total+=products[i].price;
-    }
-    console.log(total);
-}
-
-function getProductStatus(products){
-    for(let i=0;i<products.length;i++){
-        if(products[i].price >= 10000){
-            console.log("EXPENSIVE: ",products[i].name);
-        }else{
-            console.log("AFFORDABLE: ",products[i].name);
-        }
-    }
+function getTotalPrice(products) {
+  let total = 0;
+  for (let i = 0; i < products.length; i++) {
+    total += products[i].price;
+  }
+  console.log(total);
 }
 
-function getAffordableProducts(products){
-    let affordable=[];
-    for(let i=0;i<products.length;i++){
-        if(products[i].price < 10000){
-          affordable.push(products[i].name);
-        }
+function getProductStatus(products) {
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price >= 10000) {
+      console.log("EXPENSIVE: ", products[i].name);
+    } else {
+      console.log("AFFORDABLE: ", products[i].name);
     }
-    return affordable;
+  }
 }
 
-function getProductNames(products){
-    let names=[];
-    for(let i=0;i<products.length;i++){
-       names.push(products[i].name);
+function getAffordableProducts(products) {
+  let affordable = [];
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price < 10000) {
+      affordable.push(products[i].name);
     }
-    return names;
+  }
+  return affordable;
 }
 
+function getProductNames(products) {
+  let names = [];
+  for (let i = 0; i < products.length; i++) {
+    names.push(products[i].name);
+  }
+  return names;
+}
 
-let names=products.map(function(product) {
-    return product.name;
+let names = products.map(function (product) {
+  return product.name;
 });
 // console.log(names);
 
-let expensive = products.filter(function(product) {
-    return product.price>=10000;
+let expensive = products.filter(function (product) {
+  return product.price >= 10000;
 });
 
 // console.log(expensive);
 
-let cheapProducts = products.filter(function(product){
-    return product.price<2000;
+let cheapProducts = products.filter(function (product) {
+  return product.price < 2000;
 });
 
 // console.log(cheapProducts);
 
-let findproduct = products.find(function(product){
-    return product.price > 10000;
+let findproduct = products.find(function (product) {
+  return product.price > 10000;
 });
 
 // console.log(findproduct);
 
-let cheapProd= products.filter(function(product){
-    return product.price < 2000;
+let cheapProd = products.filter(function (product) {
+  return product.price < 2000;
 });
 
 // console.log(cheapProd);
 
-let affordableProductNames=products.filter(function(product){
-    return product.price<10000;
-}) .map(function(product){
+let affordableProductNames = products
+  .filter(function (product) {
+    return product.price < 10000;
+  })
+  .map(function (product) {
     return product.name;
-});
+  });
 
 // console.log(affordableProductNames);
 
 function getAffordableProductNames(products) {
-    let result=products.filter(function(product){
-    return product.price>10000;
-}) .map(function(product){
-    return product.name;
-});
-return result;
+  let result = products
+    .filter(function (product) {
+      return product.price > 10000;
+    })
+    .map(function (product) {
+      return product.name;
+    });
+  return result;
 }
 // console.log(getAffordableProductNames(products));
 
 function findProductByName(products, name) {
-    let result = products.find(function(product) {
-        return product.name===name;
-    });
+  let result = products.find(function (product) {
+    return product.name === name;
+  });
 
-    return result;
+  return result;
 }
 // console.log(findProductByName(products, "Phone"));
 // console.log(findProductByName(products, "Mouse"));
 
-function getAffordableProductNames(products, maxPrice){
-    let result= products.filter(function(product){
-            return product.price<maxPrice;
-    }).map(function(product){
-        
-        return product.name;
+function getAffordableProductNames(products, maxPrice) {
+  let result = products
+    .filter(function (product) {
+      return product.price < maxPrice;
+    })
+    .map(function (product) {
+      return product.name;
     });
-    return result;
+  return result;
 }
 // console.log(getAffordableProductNames(products,10000));
 
@@ -359,85 +356,100 @@ const heading = document.querySelector("h1");
 console.log(heading);
 const button = document.querySelector("button");
 const image = document.querySelector("img");
-button.addEventListener("click",function(){
-    heading.textContent="learning Javascript";
-    heading.classList.add("highlight");
-    image.setAttribute("alt", "GitHub Profile Clicked");
+button.addEventListener("click", function () {
+  heading.textContent = "learning Javascript";
+  heading.classList.add("highlight");
+  image.setAttribute("alt", "GitHub Profile Clicked");
 });
-image.addEventListener("mouseover",function(event){
-    event.target.setAttribute("alt", "GitHub image hovered");
-     event.target.classList.add("highlight");
+image.addEventListener("mouseover", function (event) {
+  event.target.setAttribute("alt", "GitHub image hovered");
+  event.target.classList.add("highlight");
 });
-image.addEventListener("mouseleave", function(event){
-    event.target.classList.remove("highlight");
+image.addEventListener("mouseleave", function (event) {
+  event.target.classList.remove("highlight");
 });
 const hideLearningButton = document.querySelector("#hideLearningButton");
 const learningCards = document.querySelector(".learning-cards");
-hideLearningButton.addEventListener("click", function() {
-        learningCards.classList.toggle("hidden");
-        if (learningCards.classList.contains("hidden")) {
-            hideLearningButton.textContent="show learning";
-} else {
-    hideLearningButton.textContent="hide learning";
-}
+hideLearningButton.addEventListener("click", function () {
+  learningCards.classList.toggle("hidden");
+  if (learningCards.classList.contains("hidden")) {
+    hideLearningButton.textContent = "show learning";
+  } else {
+    hideLearningButton.textContent = "hide learning";
+  }
 });
-const contact=document.querySelector("#name");
+const contact = document.querySelector("#name");
 
-contact.addEventListener("input", function(event) {
-    nameMessage.textContent = event.target.value;
+contact.addEventListener("input", function (event) {
+  nameMessage.textContent = event.target.value;
 });
-
 
 const contactForm = document.querySelector("#contactForm");
 const formMessage = document.querySelector("#formMessage");
 
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+contactForm.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    const name = document.querySelector("#name").value;
-    const email = document.querySelector("#email").value;
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
 
-    if (name === "" || email === "") {
-        formMessage.textContent = "Please fill in all fields.";
-    } else {
-        formMessage.textContent = "Form submitted successfully.";
-    }
+  if (name === "" || email === "") {
+    formMessage.textContent = "Please fill in all fields.";
+  } else {
+    formMessage.textContent = "Form submitted successfully.";
+  }
 });
 
-const signup= document.querySelector("#signup");
-const feedback=document.querySelector("#feedback");
+const signup = document.querySelector("#signup");
+const feedback = document.querySelector("#feedback");
+localStorage.setItem("test", "hello");
+const savedTest = localStorage.getItem("test");
+console.log(savedTest);
 
-signup.addEventListener("submit",function(event){
-    event.preventDefault();
+signup.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-    console.log(document.querySelector("#username"));
-    console.log(document.querySelector("#signupEmail"));
+  console.log(document.querySelector("#username"));
+  console.log(document.querySelector("#signupEmail"));
 
-    const username=document.querySelector("#username").value;
-    const email=document.querySelector("#signupEmail").value;
+  const username = document.querySelector("#username").value;
+  const email = document.querySelector("#signupEmail").value;
 
-    if(username=== "" || email === "") {
-        feedback.textContent="please fill in all fields.";
-    }else{
-         feedback.textContent = "signup done successfully.";
-    }
+  if (username === "" || email === "") {
+    feedback.textContent = "please fill in all fields.";
+  } else {
+    feedback.textContent = "signup done successfully.";
+    const user = {
+      username: username,
+      email: email,
+    };
+
+    localStorage.setItem("user", JSON.stringify(user));
+  }
 });
+const savedUser = document.querySelector("#savedUser");
 
-const textinput=document.querySelector("#textInput");
-const charcount=document.querySelector("#characterCount");
-const wordcount=document.querySelector("#wordCount");
-const counterfeedback=document.querySelector("#counterFeedback");
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (user) {
+    savedUser.textContent = `Welcome back, ${user.username}`;
+}
+
+const textinput = document.querySelector("#textInput");
+const charcount = document.querySelector("#characterCount");
+const wordcount = document.querySelector("#wordCount");
+const counterfeedback = document.querySelector("#counterFeedback");
 
 function updateCounter(text) {
-     const characters = text.length;
+  const characters = text.length;
 
-    const words = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
+  const words = text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
 
-    charcount.textContent = "Characters: " + characters;
-    wordcount.textContent = "Words: " + words;
+  charcount.textContent = "Characters: " + characters;
+  wordcount.textContent = "Words: " + words;
 
-    counterfeedback.textContent = "Keep typing...";
+  counterfeedback.textContent = "Keep typing...";
 }
-textinput.addEventListener("input", function() {
-    updateCounter(textinput.value);
+textinput.addEventListener("input", function () {
+  updateCounter(textinput.value);
 });
