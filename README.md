@@ -134,6 +134,24 @@ Built and tested a persistent signup feature:
 
 Completed the planned JavaScript localStorage task for today.
 
+### 12 September 2026 — JavaScript Foundation Rebuild
+
+Rebuilt and practiced the JavaScript foundation from a blank file:
+
+- Variables and data types
+- Operators
+- Conditionals
+- Loops
+- Functions and return values
+- Arrays
+- Objects
+- Combining functions, arrays, loops, and conditions
+- Processing array data with loops
+- Counting, summing, and averaging values based on conditions
+- Tested and debugged the implementations in Node.js
+
+Completed the planned JavaScript foundation rebuild and blank-file practice for today.
+
 ## Projects
 
 Projects will be added progressively as my development skills improve.
