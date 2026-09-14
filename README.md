@@ -107,50 +107,20 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 10 September 2026 — JavaScript localStorage
+### 14 September 2026 — JavaScript Core Fundamentals Rebuild
 
-Learned and practiced:
-
-- Browser storage and why `localStorage` exists
-- `setItem()`
-- `getItem()`
-- `removeItem()`
-- String-based storage
-- `JSON.stringify()`
-- `JSON.parse()`
-- Connecting stored data with the DOM/UI
-
-Built and tested a persistent signup feature:
-
-- Stored signup username and email in `localStorage`
-- Stored username and email together as a JavaScript object
-- Used `JSON.stringify()` to convert the object into a string for storage
-- Used `JSON.parse()` to convert stored data back into a JavaScript object
-- Verified that stored data persisted after page reload
-- Read the stored user data using `getItem()`
-- Updated the webpage dynamically using the stored username
-- Displayed a `Welcome back` message using the stored data
-- Tested and verified the complete interaction in the browser
-
-Completed the planned JavaScript localStorage task for today.
-
-### 12 September 2026 — JavaScript Foundation Rebuild
-
-Rebuilt and practiced the JavaScript foundation from a blank file:
+Revised and practiced JavaScript core fundamentals independently:
 
 - Variables and data types
 - Operators
-- Conditionals
-- Loops
-- Functions and return values
-- Arrays
-- Objects
-- Combining functions, arrays, loops, and conditions
-- Processing array data with loops
-- Counting, summing, and averaging values based on conditions
-- Tested and debugged the implementations in Node.js
+- Conditional statements
+- `for` loops
+- Arrays and array indexing
+- Using `length` in loop conditions
+- Combining arrays, loops, conditions, and comparison operators
+- Tested and verified the implementations using Node.js
 
-Completed the planned JavaScript foundation rebuild and blank-file practice for today.
+Completed the planned JavaScript core fundamentals rebuild for today.
 
 ## Projects
 

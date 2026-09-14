@@ -104,18 +104,56 @@
 
 // console.log( sumMarks());
 
+// const marks = [45, 72, 30, 90, 55, 40];
+// function getPassedMarks(){
+//     let sum=0;
+//     let count=0
+//     for(let i=0; i<marks.length; i++){
+//         if(marks[i]>=50){
+//             sum+=marks[i];
+//             count++;
+//         }
+//     }
+//     let average=sum/count;
+//     return average;
+// }
+// console.log( getPassedMarks());
 
-const marks = [45, 72, 30, 90, 55, 40];
-function getPassedMarks(){
-    let sum=0;
-    let count=0
-    for(let i=0; i<marks.length; i++){
-        if(marks[i]>=50){
-            sum+=marks[i];
-            count++;
-        }
+let name = "gaurav";
+let age = 22;
+let islearningJavaScript = true;
+let targetLanguage = "JavaScript";
+
+// console.log(name);
+// console.log(age);
+// console.log(islearningJavaScript);
+// console.log(targetLanguage);
+
+let a = 20;
+let b = 6;
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+// console.log(a % b);
+// console.log(a > b);
+
+let marks=45;
+// if(marks>=50){
+//     console.log("Pass");
+// }else{
+// console.log("Fail");
+// }
+
+// let numbers = [10, 20, 30, 40, 50];
+// for(let i=0;i<numbers.length;i++){
+//     // console.log(numbers[i]);
+// }
+
+let prices = [120, 50, 300, 80, 200];
+for(let i=0;i<prices.length;i++){
+    if(prices[i]>=100){
+        console.log(prices[i]);
     }
-    let average=sum/count;
-    return average;
 }
-console.log( getPassedMarks());
+
