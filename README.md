@@ -107,20 +107,25 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 14 September 2026 — JavaScript Core Fundamentals Rebuild
+### 15 September 2026 — JavaScript Functions and Array Processing
 
-Revised and practiced JavaScript core fundamentals independently:
+Learned and practiced:
 
-- Variables and data types
-- Operators
-- Conditional statements
-- `for` loops
-- Arrays and array indexing
-- Using `length` in loop conditions
-- Combining arrays, loops, conditions, and comparison operators
-- Tested and verified the implementations using Node.js
+- Function declarations
+- Parameters and arguments
+- `return`
+- Difference between `return` and `console.log()`
+- Functions with conditions and loops
+- Processing arrays with functions
+- Calculating totals
+- Counting elements based on conditions
+- Returning filtered results
+- Processing arrays of objects
+- Extracting information from objects
+- Calculating averages based on conditions
+- Tested and debugged implementations using Node.js
 
-Completed the planned JavaScript core fundamentals rebuild for today.
+Completed the required JavaScript functions and practical array-processing work for today.
 
 ## Projects
 
