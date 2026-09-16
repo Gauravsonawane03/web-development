@@ -107,25 +107,25 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 15 September 2026 — JavaScript Functions and Array Processing
+### 16 September 2026 — JavaScript Array Methods
 
 Learned and practiced:
 
-- Function declarations
-- Parameters and arguments
-- `return`
-- Difference between `return` and `console.log()`
-- Functions with conditions and loops
-- Processing arrays with functions
-- Calculating totals
-- Counting elements based on conditions
-- Returning filtered results
-- Processing arrays of objects
-- Extracting information from objects
-- Calculating averages based on conditions
+- `filter()`
+- `map()`
+- `find()`
+- Difference between `filter()`, `map()`, `find()`, and `for` loops
+- Using `filter()` with arrays of primitive values
+- Using `filter()` with arrays of objects
+- Using `map()` to transform array data
+- Using `find()` to retrieve the first matching element
+- Understanding `undefined` when `find()` finds no match
+- Combining `filter()` and `map()`
+- Using array methods with functions, conditions, and objects
 - Tested and debugged implementations using Node.js
+- Verified understanding of when to use each array method
 
-Completed the required JavaScript functions and practical array-processing work for today.
+Completed the planned JavaScript array methods and integration work for today.
 
 ## Projects
 
