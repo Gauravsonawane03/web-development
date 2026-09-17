@@ -107,25 +107,31 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 16 September 2026 — JavaScript Array Methods
+### 17 September 2026 — JavaScript DOM Rebuild and Retention
 
-Learned and practiced:
+Rebuilt and reinforced JavaScript DOM fundamentals through hands-on practice:
 
-- `filter()`
-- `map()`
-- `find()`
-- Difference between `filter()`, `map()`, `find()`, and `for` loops
-- Using `filter()` with arrays of primitive values
-- Using `filter()` with arrays of objects
-- Using `map()` to transform array data
-- Using `find()` to retrieve the first matching element
-- Understanding `undefined` when `find()` finds no match
-- Combining `filter()` and `map()`
-- Using array methods with functions, conditions, and objects
-- Tested and debugged implementations using Node.js
-- Verified understanding of when to use each array method
+- Reviewed the DOM as the browser's object/tree representation of an HTML document
+- Practiced `querySelector()` for selecting individual elements
+- Practiced `querySelectorAll()` for selecting multiple elements
+- Worked with NodeLists, indexing, and loops
+- Changed element content using `textContent`
+- Read input values using `.value`
+- Read and changed attributes using `getAttribute()` and `setAttribute()`
+- Practiced `classList.add()`, `classList.remove()`, `classList.toggle()`, and `classList.contains()`
+- Practiced event handling using `addEventListener()`
+- Reviewed the `event` object and `event.target`
+- Practiced `click` events
+- Practiced `input` events
+- Connected an input event to another DOM element
+- Built live name feedback using the input value
+- Debugged incorrect element selection and event-target usage
+- Practiced separating behavior between different event handlers
+- Completed a final retention test by making the Contact button update another DOM element
 
-Completed the planned JavaScript array methods and integration work for today.
+Completed the planned DOM retention and rebuild checkpoint for today.
+
+Async JavaScript and Fetch were intentionally postponed to the next study session so the DOM/event foundation could be reinforced properly.
 
 ## Projects
 
