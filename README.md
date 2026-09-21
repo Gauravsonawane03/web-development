@@ -73,7 +73,7 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Basic validation
 - [x] DOM state + JavaScript logic
 - [x] localStorage
-- [ ] Async JavaScript
+- [x] Async JavaScript
 - [ ] APIs
 - [ ] Modern JavaScript
 
@@ -107,31 +107,39 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 17 September 2026 — JavaScript DOM Rebuild and Retention
+### 21 September 2026 — Async JavaScript, Promises, Fetch, and DOM Integration
 
-Rebuilt and reinforced JavaScript DOM fundamentals through hands-on practice:
+Learned and practiced asynchronous JavaScript and Fetch through hands-on implementation:
 
-- Reviewed the DOM as the browser's object/tree representation of an HTML document
-- Practiced `querySelector()` for selecting individual elements
-- Practiced `querySelectorAll()` for selecting multiple elements
-- Worked with NodeLists, indexing, and loops
-- Changed element content using `textContent`
-- Read input values using `.value`
-- Read and changed attributes using `getAttribute()` and `setAttribute()`
-- Practiced `classList.add()`, `classList.remove()`, `classList.toggle()`, and `classList.contains()`
-- Practiced event handling using `addEventListener()`
-- Reviewed the `event` object and `event.target`
-- Practiced `click` events
-- Practiced `input` events
-- Connected an input event to another DOM element
-- Built live name feedback using the input value
-- Debugged incorrect element selection and event-target usage
-- Practiced separating behavior between different event handlers
-- Completed a final retention test by making the Contact button update another DOM element
+- Learned the difference between synchronous and asynchronous JavaScript
+- Understood why waiting for network operations should not block normal JavaScript execution
+- Learned Promises as objects representing the eventual result of asynchronous operations
+- Practiced Promise states: pending, fulfilled, and rejected
+- Created Promises using `new Promise()`
+- Practiced resolving and rejecting Promises
+- Consumed Promises using `.then()` and `.catch()`
+- Learned how `async` functions and `await` work with Promises
+- Understood that `async/await` is another way of consuming Promise-based operations
+- Practiced `try...catch` for handling errors from asynchronous operations
+- Learned the Fetch flow: `fetch()` → `Response` → `response.json()` → JavaScript data
+- Performed a GET request using `fetch()`
+- Inspected the `Response` object and distinguished it from the parsed response data
+- Used `response.json()` to convert the response body into JavaScript data
+- Extracted useful values from fetched objects, including nested properties
+- Learned that HTTP errors such as `404` do not automatically cause `fetch()` to reject
+- Used `response.ok` to check HTTP success
+- Used `throw new Error()` to convert HTTP failures into handled errors
+- Practiced handling network failures and HTTP failures with `try...catch`
+- Integrated Fetch with the existing DOM and event-handling code
+- Connected the Contact button to an asynchronous Fetch operation
+- Implemented a loading state while waiting for the request
+- Displayed successful fetched data in the webpage
+- Displayed an error message when the request failed
+- Tested both successful and `404` failure paths
+- Debugged variable redeclaration caused by multiple JavaScript files sharing the same page
+- Debugged scope issues and accidental recursive function calls during implementation
 
-Completed the planned DOM retention and rebuild checkpoint for today.
-
-Async JavaScript and Fetch were intentionally postponed to the next study session so the DOM/event foundation could be reinforced properly.
+Completed the planned Async JavaScript / Fetch checkpoint for today.
 
 ## Projects
 
