@@ -107,39 +107,35 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Learning Log
 
-### 21 September 2026 — Async JavaScript, Promises, Fetch, and DOM Integration
+### 23 September 2026 — Async JavaScript / Fetch Retention and Independent Rebuild
 
-Learned and practiced asynchronous JavaScript and Fetch through hands-on implementation:
+Performed a retention-focused rebuild of Async JavaScript and Fetch from a new JavaScript file rather than relying on the previous implementation:
 
-- Learned the difference between synchronous and asynchronous JavaScript
-- Understood why waiting for network operations should not block normal JavaScript execution
-- Learned Promises as objects representing the eventual result of asynchronous operations
-- Practiced Promise states: pending, fulfilled, and rejected
-- Created Promises using `new Promise()`
-- Practiced resolving and rejecting Promises
-- Consumed Promises using `.then()` and `.catch()`
-- Learned how `async` functions and `await` work with Promises
-- Understood that `async/await` is another way of consuming Promise-based operations
-- Practiced `try...catch` for handling errors from asynchronous operations
-- Learned the Fetch flow: `fetch()` → `Response` → `response.json()` → JavaScript data
-- Performed a GET request using `fetch()`
-- Inspected the `Response` object and distinguished it from the parsed response data
-- Used `response.json()` to convert the response body into JavaScript data
-- Extracted useful values from fetched objects, including nested properties
-- Learned that HTTP errors such as `404` do not automatically cause `fetch()` to reject
-- Used `response.ok` to check HTTP success
-- Used `throw new Error()` to convert HTTP failures into handled errors
-- Practiced handling network failures and HTTP failures with `try...catch`
-- Integrated Fetch with the existing DOM and event-handling code
-- Connected the Contact button to an asynchronous Fetch operation
-- Implemented a loading state while waiting for the request
-- Displayed successful fetched data in the webpage
-- Displayed an error message when the request failed
-- Tested both successful and `404` failure paths
-- Debugged variable redeclaration caused by multiple JavaScript files sharing the same page
-- Debugged scope issues and accidental recursive function calls during implementation
+- Created a separate `async-fetch-retention.js` file for independent reconstruction
+- Reconnected the new JavaScript file to the existing HTML page
+- Rebuilt DOM element selection using `querySelector()`
+- Rebuilt button event handling and `preventDefault()`
+- Reconstructed the loading state
+- Recalled and implemented an `async` function
+- Reconstructed the `fetch()` → Promise → `Response` flow
+- Reconstructed `response.json()` → Promise → parsed JavaScript data
+- Recalled `response.ok` for HTTP success checking
+- Reconstructed `throw new Error()` for HTTP failures
+- Reconstructed `try...catch` for asynchronous error handling
+- Connected the asynchronous operation to the DOM
+- Rebuilt the success state displaying fetched user information
+- Rebuilt the error state for failed HTTP requests
+- Tested the HTTP `404` failure path
+- Reconstructed the distinction between the `Response` object and parsed JavaScript data
+- Reinforced that `fetch()` returns a Promise
+- Reinforced that `response.json()` also returns a Promise
+- Reinforced that `await` produces the fulfilled value or throws when the awaited Promise rejects
+- Identified and corrected gaps in recall around `Response`, parsed JSON, and `response.ok`
+- Completed a final retrieval check and correctly reconstructed the core Fetch sequence from memory
 
-Completed the planned Async JavaScript / Fetch checkpoint for today.
+Retention checkpoint completed.
+
+Async JavaScript / Fetch is now demonstrated beyond initial implementation, with further spaced retrieval still required before considering the capability fully mastered.
 
 ## Projects
 
