@@ -87,7 +87,7 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ### React
 
-- [ ] Components
+- [x] Components
 - [ ] Props and state
 - [ ] Hooks
 - [ ] Routing
@@ -105,37 +105,24 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Testing
 - [ ] Deployment
 
-## Learning Log
+## Daily Learning Log
 
-### 23 September 2026 — Async JavaScript / Fetch Retention and Independent Rebuild
+### 24 September 2026 — React Foundations
 
-Performed a retention-focused rebuild of Async JavaScript and Fetch from a new JavaScript file rather than relying on the previous implementation:
+- Set up React with Vite
+- Learned JSX and functional components
+- Learned component composition
+- Learned props and one-way data flow
+- Built reusable `Header` and `UserCard` components
+- Rendered lists using `.map()`
+- Learned React `key` for list rendering
+- Learned basic conditional rendering with `&&`
+- Built and tested a reusable `ProductCard` component
+- Practiced passing product data through props
+- Debugged a React rendering error caused by an incorrect import
+- Completed the React Foundations independent mini-build
 
-- Created a separate `async-fetch-retention.js` file for independent reconstruction
-- Reconnected the new JavaScript file to the existing HTML page
-- Rebuilt DOM element selection using `querySelector()`
-- Rebuilt button event handling and `preventDefault()`
-- Reconstructed the loading state
-- Recalled and implemented an `async` function
-- Reconstructed the `fetch()` → Promise → `Response` flow
-- Reconstructed `response.json()` → Promise → parsed JavaScript data
-- Recalled `response.ok` for HTTP success checking
-- Reconstructed `throw new Error()` for HTTP failures
-- Reconstructed `try...catch` for asynchronous error handling
-- Connected the asynchronous operation to the DOM
-- Rebuilt the success state displaying fetched user information
-- Rebuilt the error state for failed HTTP requests
-- Tested the HTTP `404` failure path
-- Reconstructed the distinction between the `Response` object and parsed JavaScript data
-- Reinforced that `fetch()` returns a Promise
-- Reinforced that `response.json()` also returns a Promise
-- Reinforced that `await` produces the fulfilled value or throws when the awaited Promise rejects
-- Identified and corrected gaps in recall around `Response`, parsed JSON, and `response.ok`
-- Completed a final retrieval check and correctly reconstructed the core Fetch sequence from memory
-
-Retention checkpoint completed.
-
-Async JavaScript / Fetch is now demonstrated beyond initial implementation, with further spaced retrieval still required before considering the capability fully mastered.
+React components, props, list rendering, keys, and basic conditional rendering are demonstrated. State, hooks, routing, API integration, and application architecture remain to be learned.
 
 ## Projects
 
