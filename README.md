@@ -107,22 +107,26 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 24 September 2026 — React Foundations
+### 26 September 2026 — React State + Events
 
-- Set up React with Vite
-- Learned JSX and functional components
-- Learned component composition
-- Learned props and one-way data flow
-- Built reusable `Header` and `UserCard` components
-- Rendered lists using `.map()`
-- Learned React `key` for list rendering
-- Learned basic conditional rendering with `&&`
-- Built and tested a reusable `ProductCard` component
-- Practiced passing product data through props
-- Debugged a React rendering error caused by an incorrect import
-- Completed the React Foundations independent mini-build
+- Learned why props alone are not sufficient for interactive UI
+- Learned what component state represents
+- Learned `useState`
+- Practiced state initialization and state updates
+- Learned that state updates cause React to re-render the component
+- Learned React event handling with `onClick`
+- Built a `QuantityCart` component from a blank file
+- Implemented quantity state with `useState`
+- Implemented `+` and `-` interactions
+- Added a minimum quantity boundary condition of `1`
+- Tested and debugged the boundary behavior
+- Distinguished React state from ordinary variables
+- Learned why state should be updated through its setter instead of direct mutation
+- Distinguished state, fixed data, and derived data
+- Calculated cart total as derived data using `price * quantity`
+- Tested the complete interaction in the browser
 
-React components, props, list rendering, keys, and basic conditional rendering are demonstrated. State, hooks, routing, API integration, and application architecture remain to be learned.
+React state and event handling are now demonstrated through a small interactive component. Further practice and retrieval are still required before considering the concepts mastered.
 
 ## Projects
 
