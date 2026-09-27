@@ -1,4 +1,5 @@
 import QuantityCart from "./QuantityCart";
+import VolumeControl from "./VolumeControl";
 import Header from "./Header";
 import ProductCard from "./ProductCard";
 const products = [
@@ -26,6 +27,7 @@ function App() {
     <div>
     <Header title="Gaurav's React App" />
     <QuantityCart />
+    <VolumeControl />
     {products.map((product) => (
   <ProductCard
     key={product.id}

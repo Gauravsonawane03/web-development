@@ -107,26 +107,26 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 26 September 2026 — React State + Events
+### 27 September 2026 — React State + Events Retrieval and Independent Practice
 
-- Learned why props alone are not sufficient for interactive UI
-- Learned what component state represents
-- Learned `useState`
-- Practiced state initialization and state updates
-- Learned that state updates cause React to re-render the component
-- Learned React event handling with `onClick`
-- Built a `QuantityCart` component from a blank file
-- Implemented quantity state with `useState`
-- Implemented `+` and `-` interactions
-- Added a minimum quantity boundary condition of `1`
-- Tested and debugged the boundary behavior
-- Distinguished React state from ordinary variables
+- Retrieved the concepts of React state, `useState`, state setters, and re-rendering
+- Distinguished React state from ordinary JavaScript variables
 - Learned why state should be updated through its setter instead of direct mutation
 - Distinguished state, fixed data, and derived data
-- Calculated cart total as derived data using `price * quantity`
-- Tested the complete interaction in the browser
+- Explained how state updates cause React to re-render the component
+- Designed a new interactive component independently before implementation
+- Built a `VolumeControl` component from a blank file
+- Implemented `volume` as state with `useState`
+- Used fixed `step` data to control volume changes
+- Derived `status` from the current volume
+- Implemented `+` and `-` event handlers
+- Added volume boundaries from `0` to `100`
+- Debugged the `+` interaction when it initially did not work
+- Tested normal behavior and both boundary conditions
+- Verified status transitions from `Muted` to `Low`, `Medium`, and `High`
+- Explained the flow from user interaction → event handler → state update → React re-render → updated UI
 
-React state and event handling are now demonstrated through a small interactive component. Further practice and retrieval are still required before considering the concepts mastered.
+React state and event handling are understood through retrieval and a second guided implementation. The concepts are not yet considered independently mastered because the implementation still required guidance and debugging support.
 
 ## Projects
 
