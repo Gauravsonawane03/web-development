@@ -107,26 +107,29 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 27 September 2026 — React State + Events Retrieval and Independent Practice
+### 1 October 2026 — React Retrieval + Controlled Forms
 
-- Retrieved the concepts of React state, `useState`, state setters, and re-rendering
-- Distinguished React state from ordinary JavaScript variables
-- Learned why state should be updated through its setter instead of direct mutation
-- Distinguished state, fixed data, and derived data
-- Explained how state updates cause React to re-render the component
-- Designed a new interactive component independently before implementation
-- Built a `VolumeControl` component from a blank file
-- Implemented `volume` as state with `useState`
-- Used fixed `step` data to control volume changes
-- Derived `status` from the current volume
-- Implemented `+` and `-` event handlers
-- Added volume boundaries from `0` to `100`
-- Debugged the `+` interaction when it initially did not work
-- Tested normal behavior and both boundary conditions
-- Verified status transitions from `Muted` to `Low`, `Medium`, and `High`
-- Explained the flow from user interaction → event handler → state update → React re-render → updated UI
+- Retrieved the concepts of React state, `useState`, state setters, re-rendering, event handlers, direct mutation vs state setters, and fixed vs state vs derived data
+- Reimplemented React state and event handling through a blank-page `Counter` component
+- Used `useState` to manage changing component data
+- Implemented `+` and `-` interactions with state updates
+- Added a boundary condition preventing the counter from going below `0`
+- Learned the concept of controlled React inputs
+- Built a controlled input using `value` and `onChange`
+- Explained the flow from user input → `onChange` → state update → React re-render → updated input value
+- Built a controlled form with a text input and submit button
+- Implemented form submission using `onSubmit`
+- Used `event.preventDefault()` to prevent the browser's default form submission and page reload
+- Implemented basic validation for empty input using `trim()`
+- Added React state for validation errors
+- Used conditional rendering to display validation feedback
+- Added separate `name` and `submittedName` state to distinguish current input from previously submitted data
+- Implemented successful form submission and displayed the submitted value
+- Cleared validation errors after a valid submission
+- Tested empty submission, valid submission, changing input after submission, and resubmitting updated data
+- Reviewed the final `NameForm` implementation and explained the controlled-component pattern
 
-React state and event handling are understood through retrieval and a second guided implementation. The concepts are not yet considered independently mastered because the implementation still required guidance and debugging support.
+React state, events, and controlled forms are now understood through retrieval, independent implementation, guided debugging, and functional testing. The concepts are not yet considered independently mastered because the controlled-form implementation still required guidance and should be reinforced through another fresh variation.
 
 ## Projects
 

@@ -1,6 +1,8 @@
 import QuantityCart from "./QuantityCart";
 import VolumeControl from "./VolumeControl";
+import Counter from "./Counter";
 import Header from "./Header";
+import Nameform from "./NameForm";
 import ProductCard from "./ProductCard";
 const products = [
   {
@@ -26,8 +28,10 @@ function App() {
   return (
     <div>
     <Header title="Gaurav's React App" />
+    <Nameform />
     <QuantityCart />
     <VolumeControl />
+    <Counter />
     {products.map((product) => (
   <ProductCard
     key={product.id}
