@@ -107,29 +107,30 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 1 October 2026 — React Retrieval + Controlled Forms
+### 2 October 2026 — React Controlled Forms + Component Communication
 
-- Retrieved the concepts of React state, `useState`, state setters, re-rendering, event handlers, direct mutation vs state setters, and fixed vs state vs derived data
-- Reimplemented React state and event handling through a blank-page `Counter` component
-- Used `useState` to manage changing component data
-- Implemented `+` and `-` interactions with state updates
-- Added a boundary condition preventing the counter from going below `0`
-- Learned the concept of controlled React inputs
-- Built a controlled input using `value` and `onChange`
-- Explained the flow from user input → `onChange` → state update → React re-render → updated input value
-- Built a controlled form with a text input and submit button
+- Built a fresh controlled-form variation to test transfer rather than repeating the previous implementation
+- Used React state to manage current input, submitted value, and validation error
+- Implemented a controlled input using `value` and `onChange`
 - Implemented form submission using `onSubmit`
 - Used `event.preventDefault()` to prevent the browser's default form submission and page reload
-- Implemented basic validation for empty input using `trim()`
-- Added React state for validation errors
-- Used conditional rendering to display validation feedback
-- Added separate `name` and `submittedName` state to distinguish current input from previously submitted data
-- Implemented successful form submission and displayed the submitted value
-- Cleared validation errors after a valid submission
-- Tested empty submission, valid submission, changing input after submission, and resubmitting updated data
-- Reviewed the final `NameForm` implementation and explained the controlled-component pattern
+- Implemented empty-input validation using `trim()`
+- Displayed validation errors conditionally
+- Stored the submitted value separately from the current input value
+- Tested empty submission, valid submission, input changes, and resubmission with updated data
+- Debugged a JSX error caused by an accidental assignment
+- Built an `ItemSelector` child component for component communication practice
+- Passed parent-owned `items` data to the child through `props.items`
+- Passed the parent's `setSelectedItem` function to the child through an `onSelect` callback prop
+- Implemented child interaction using `onClick`
+- Used `props.onSelect(item.name)` to send the selected item from the child back to the parent
+- Added `selectedItem` state in the parent component
+- Displayed the parent's selected state in the UI
+- Verified that clicking Laptop, Keyboard, and Monitor updates the parent's state correctly
+- Tested repeated selections, different selection orders, and refresh behavior
+- Demonstrated the React data flow: parent state → props → child interaction → callback prop → parent state update
 
-React state, events, and controlled forms are now understood through retrieval, independent implementation, guided debugging, and functional testing. The concepts are not yet considered independently mastered because the controlled-form implementation still required guidance and should be reinforced through another fresh variation.
+Controlled forms were reinforced through a fresh variation and functional testing, but the implementation still required some syntax guidance. Component communication and lifting state were implemented with guidance and successfully tested end-to-end. These concepts are not yet considered independently mastered and should receive further retrieval and fresh variations.
 
 ## Projects
 
