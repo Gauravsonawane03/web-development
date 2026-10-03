@@ -7,6 +7,7 @@ import Nameform from "./NameForm";
 import Username from "./UsernameForm";
 import ProductCard from "./ProductCard";
 import ItemSelector from "./ItemSelector";
+import Productselector from "./ProductSelector";
 const products = [
   {
     id: 1,
@@ -33,7 +34,7 @@ const items = [
   { id: 3, name: "Monitor" }
 ];
 function App() {
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState("");
   return (
     <div>
     <Header title="Gaurav's React App" />
@@ -42,11 +43,11 @@ function App() {
     <QuantityCart />
     <VolumeControl />
     <Counter />
-    <ItemSelector
-     items={items} 
-     onSelect={setSelectedItem}
-    />
-    <p>Selected: {selectedItem}</p>
+   <Productselector
+  products={products}
+  onSelect={setSelectedProduct}
+  selectedProduct={selectedProduct}/>
+<p>Selected: {selectedProduct}</p>
     {products.map((product) => (
   <ProductCard
     key={product.id}

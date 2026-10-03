@@ -107,30 +107,28 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 2 October 2026 — React Controlled Forms + Component Communication
+### 3 October 2026 — React Product Selection + Lifting State
 
-- Built a fresh controlled-form variation to test transfer rather than repeating the previous implementation
-- Used React state to manage current input, submitted value, and validation error
-- Implemented a controlled input using `value` and `onChange`
-- Implemented form submission using `onSubmit`
-- Used `event.preventDefault()` to prevent the browser's default form submission and page reload
-- Implemented empty-input validation using `trim()`
-- Displayed validation errors conditionally
-- Stored the submitted value separately from the current input value
-- Tested empty submission, valid submission, input changes, and resubmission with updated data
-- Debugged a JSX error caused by an accidental assignment
-- Built an `ItemSelector` child component for component communication practice
-- Passed parent-owned `items` data to the child through `props.items`
-- Passed the parent's `setSelectedItem` function to the child through an `onSelect` callback prop
-- Implemented child interaction using `onClick`
-- Used `props.onSelect(item.name)` to send the selected item from the child back to the parent
-- Added `selectedItem` state in the parent component
-- Displayed the parent's selected state in the UI
-- Verified that clicking Laptop, Keyboard, and Monitor updates the parent's state correctly
-- Tested repeated selections, different selection orders, and refresh behavior
-- Demonstrated the React data flow: parent state → props → child interaction → callback prop → parent state update
+- Built a fresh Product Selector from a blank file without copying the previous ItemSelector implementation
+- Designed the component relationship before implementation
+- Kept `selectedProduct` state in the parent component
+- Passed the `products` array from the parent to the child through props
+- Passed the parent's `setSelectedProduct` function to the child through an `onSelect` callback prop
+- Rendered multiple products in the child using `.map()`
+- Used each product's `id` as the React list `key`
+- Implemented product selection through an `onClick` handler
+- Used `props.onSelect(product.name)` to send the selected product from the child to the parent
+- Displayed the selected product in the parent component
+- Verified selection of Laptop, Keyboard, and Monitor
+- Tested repeated selections and changing from one product to another
+- Added a selected-item styling variation using conditional `fontWeight`
+- Passed the parent's `selectedProduct` back to the child through props
+- Used `props.selectedProduct === product.name` to determine which product should appear bold
+- Verified that only the currently selected product is bold
+- Tested initial state, each product, repeated selection, changing selection, styling behavior, and refresh behavior
+- Demonstrated the React data flow: click → child callback → parent state update → re-render → updated prop → conditional styling
 
-Controlled forms were reinforced through a fresh variation and functional testing, but the implementation still required some syntax guidance. Component communication and lifting state were implemented with guidance and successfully tested end-to-end. These concepts are not yet considered independently mastered and should receive further retrieval and fresh variations.
+The Product Selector successfully transferred the controlled component-communication and lifting-state pattern to a fresh problem. The implementation was completed with some syntax guidance, so `Props and state` remains in progress rather than being marked independently mastered. Further retrieval and fresh variations should reinforce the concept.
 
 ## Projects
 
