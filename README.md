@@ -1,4 +1,4 @@
-# Web Development Journey
+]# Web Development Journey
 
 This repository documents my journey of learning modern web development through structured practice, projects, and software-engineering fundamentals.
 
@@ -107,28 +107,33 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 3 October 2026 — React Product Selection + Lifting State
+### 7 October 2026 — React Mental Model Repair + Product Search
 
-- Built a fresh Product Selector from a blank file without copying the previous ItemSelector implementation
-- Designed the component relationship before implementation
-- Kept `selectedProduct` state in the parent component
-- Passed the `products` array from the parent to the child through props
-- Passed the parent's `setSelectedProduct` function to the child through an `onSelect` callback prop
-- Rendered multiple products in the child using `.map()`
-- Used each product's `id` as the React list `key`
-- Implemented product selection through an `onClick` handler
-- Used `props.onSelect(product.name)` to send the selected product from the child to the parent
-- Displayed the selected product in the parent component
-- Verified selection of Laptop, Keyboard, and Monitor
-- Tested repeated selections and changing from one product to another
-- Added a selected-item styling variation using conditional `fontWeight`
-- Passed the parent's `selectedProduct` back to the child through props
-- Used `props.selectedProduct === product.name` to determine which product should appear bold
-- Verified that only the currently selected product is bold
-- Tested initial state, each product, repeated selection, changing selection, styling behavior, and refresh behavior
-- Demonstrated the React data flow: click → child callback → parent state update → re-render → updated prop → conditional styling
+- Used targeted conceptual review to reinforce the React mental model around components, JSX, props, state, events, re-rendering, and one-way data flow
+- Reinforced the difference between React state and normal JavaScript variables
+- Understood that the state setter communicates a state update to React and leads to the component being re-rendered
+- Reinforced that props carry data from parent to child and do not themselves cause the original state change
+- Reviewed lifting state to a common parent when multiple components need to work with the same state
+- Reconstructed the React data flow from user interaction → event handler → state setter → state update → re-render → updated props/UI
+- Built a fresh Product Search feature rather than copying the previous Product Selector implementation
+- Created a `SearchBar` child component
+- Kept `searchText` state in the parent component
+- Passed the current search value and callback function to `SearchBar` through props
+- Implemented the controlled search input using `value` and `onChange`
+- Used `event.target.value` to capture the user's current search text
+- Sent the search value from the child to the parent through a callback prop
+- Created a `ProductList` child component
+- Passed the products array and current search text from the parent to `ProductList`
+- Derived `filteredProducts` using `.filter()` rather than storing duplicated derived state
+- Implemented case-insensitive product-name searching using `toLowerCase()` and `.includes()`
+- Rendered matching products using `.map()`
+- Used `product.id` as the React list `key`
+- Added conditional rendering for `No products found`
+- Tested initial state, partial searches, different products, case-insensitive searches, no-match behavior, clearing the search, and existing React UI
+- Debugged stale references from the previous Product Selector implementation while integrating the new feature
+- Successfully completed and tested the Product Search feature
 
-The Product Selector successfully transferred the controlled component-communication and lifting-state pattern to a fresh problem. The implementation was completed with some syntax guidance, so `Props and state` remains in progress rather than being marked independently mastered. Further retrieval and fresh variations should reinforce the concept.
+The React mental model was reinforced successfully, and the Product Search feature was implemented end-to-end. The architecture and data flow were understood, but the implementation required substantial syntax and wiring guidance. `Props and state` therefore remains in progress and is not yet considered independently mastered or retained.
 
 ## Projects
 

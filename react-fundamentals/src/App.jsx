@@ -8,6 +8,8 @@ import Username from "./UsernameForm";
 import ProductCard from "./ProductCard";
 import ItemSelector from "./ItemSelector";
 import Productselector from "./ProductSelector";
+import SearchBar from "./SearchBar";
+import ProductList from "./ProductList";
 const products = [
   {
     id: 1,
@@ -34,20 +36,23 @@ const items = [
   { id: 3, name: "Monitor" }
 ];
 function App() {
-  const [selectedProduct, setSelectedProduct] = useState("");
+  const [searchText, setSearchText] = useState("");
   return (
     <div>
     <Header title="Gaurav's React App" />
+    <SearchBar
+    value={searchText}
+    onSearch={setSearchText}
+    />
+    <ProductList
+    products={products}
+    searchText={searchText}
+    />
     <Nameform />
     <Username />
     <QuantityCart />
     <VolumeControl />
     <Counter />
-   <Productselector
-  products={products}
-  onSelect={setSelectedProduct}
-  selectedProduct={selectedProduct}/>
-<p>Selected: {selectedProduct}</p>
     {products.map((product) => (
   <ProductCard
     key={product.id}
