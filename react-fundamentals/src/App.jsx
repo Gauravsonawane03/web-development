@@ -10,6 +10,8 @@ import ItemSelector from "./ItemSelector";
 import Productselector from "./ProductSelector";
 import SearchBar from "./SearchBar";
 import ProductList from "./ProductList";
+import ShoppingList from "./ShoppingList";
+import SearchList from "./SearchList";
 const products = [
   {
     id: 1,
@@ -35,8 +37,13 @@ const items = [
   { id: 2, name: "Keyboard" },
   { id: 3, name: "Monitor" }
 ];
+const itemList=[
+  {id:1,name:"Milk"},
+  {id:2,name:"Bread"}
+];
 function App() {
   const [searchText, setSearchText] = useState("");
+  const [search,setSearch] = useState("");
   return (
     <div>
     <Header title="Gaurav's React App" />
@@ -48,6 +55,14 @@ function App() {
     products={products}
     searchText={searchText}
     />
+    <SearchList
+    value={search}
+    onSearch={setSearch}
+    />
+    <ShoppingList
+    itemList={itemList}
+    searchList={search}
+    ></ShoppingList>
     <Nameform />
     <Username />
     <QuantityCart />

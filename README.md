@@ -1,4 +1,4 @@
-]# Web Development Journey
+# Web Development Journey
 
 This repository documents my journey of learning modern web development through structured practice, projects, and software-engineering fundamentals.
 
@@ -107,33 +107,23 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 7 October 2026 — React Mental Model Repair + Product Search
+### 9 October 2026 — React Retrieval + Shopping List Filtering
 
-- Used targeted conceptual review to reinforce the React mental model around components, JSX, props, state, events, re-rendering, and one-way data flow
-- Reinforced the difference between React state and normal JavaScript variables
-- Understood that the state setter communicates a state update to React and leads to the component being re-rendered
-- Reinforced that props carry data from parent to child and do not themselves cause the original state change
-- Reviewed lifting state to a common parent when multiple components need to work with the same state
-- Reconstructed the React data flow from user interaction → event handler → state setter → state update → re-render → updated props/UI
-- Built a fresh Product Search feature rather than copying the previous Product Selector implementation
-- Created a `SearchBar` child component
-- Kept `searchText` state in the parent component
-- Passed the current search value and callback function to `SearchBar` through props
-- Implemented the controlled search input using `value` and `onChange`
-- Used `event.target.value` to capture the user's current search text
-- Sent the search value from the child to the parent through a callback prop
-- Created a `ProductList` child component
-- Passed the products array and current search text from the parent to `ProductList`
-- Derived `filteredProducts` using `.filter()` rather than storing duplicated derived state
-- Implemented case-insensitive product-name searching using `toLowerCase()` and `.includes()`
-- Rendered matching products using `.map()`
-- Used `product.id` as the React list `key`
-- Added conditional rendering for `No products found`
-- Tested initial state, partial searches, different products, case-insensitive searches, no-match behavior, clearing the search, and existing React UI
-- Debugged stale references from the previous Product Selector implementation while integrating the new feature
-- Successfully completed and tested the Product Search feature
+- Started a fresh Shopping List exercise to strengthen React implementation ability without copying the previous Product Search implementation.
+- Worked with parent-owned state and child components receiving data and callback functions through props.
+- Implemented a controlled input using `value` and `onChange`.
+- Used `event.target.value` and a callback prop to communicate input changes to the parent.
+- Passed the shopping items and search text from the parent to the child component.
+- Derived `filteredList` from the existing items and search text using `.filter()`.
+- Implemented case-insensitive filtering using `toLowerCase()` and `includes()`.
+- Rendered filtered items using `.map()` and used item IDs as React list keys.
+- Added conditional rendering for the empty-results message.
+- Debugged component integration issues, including an undefined variable and incorrect prop wiring.
+- Corrected the prop passed to the shopping list so it received the search state rather than a component reference.
+- Tested the feature in the browser, including matching searches, no-match searches, and clearing the input.
+- Confirmed that the existing React UI continued to render alongside the new feature.
 
-The React mental model was reinforced successfully, and the Product Search feature was implemented end-to-end. The architecture and data flow were understood, but the implementation required substantial syntax and wiring guidance. `Props and state` therefore remains in progress and is not yet considered independently mastered or retained.
+The Shopping List filtering feature was completed and tested successfully. The exercise reinforced controlled inputs, props, callback-based communication, derived data, and conditional rendering. However, component wiring required debugging guidance, so independent implementation and retention remain unproven. Further blank-page retrieval is needed before considering these concepts independently mastered.
 
 ## Projects
 
