@@ -107,6 +107,24 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
+### 10 October 2026 — React Task Tracker
+
+- Built a Task Tracker feature as a fresh React implementation exercise.
+- Used `useState` to manage the task array, selected filter, input text, and validation error.
+- Implemented a controlled input using `value` and `onChange`.
+- Added form submission and empty-input validation.
+- Created task objects with an ID, task name, and `completed` status.
+- Updated the task array immutably using `setTasks` and the spread operator.
+- Rendered tasks using `.map()` and React list keys.
+- Used conditional rendering and a ternary expression to display Pending and Completed statuses.
+- Implemented All, Pending, and Completed filters using `.filter()` and derived data.
+- Added a completion toggle that updates the selected task without mutating the existing object.
+- Added a message for an empty task list or a filter with no matching tasks.
+- Debugged JSX syntax errors, a case-sensitive setter-name mismatch, and React state-update behavior.
+- Tested task creation, status changes, and filtering in the browser.
+
+The core Task Tracker functionality was completed successfully. The exercise provided guided practice with React state, controlled inputs, event handling, immutable updates, list rendering, derived data, and conditional rendering. Substantial guidance was required for implementation and debugging, so independent implementation and retention remain unproven. Further blank-page retrieval and independent variations are needed before considering these concepts mastered.
+
 ### 9 October 2026 — React Retrieval + Shopping List Filtering
 
 - Started a fresh Shopping List exercise to strengthen React implementation ability without copying the previous Product Search implementation.
