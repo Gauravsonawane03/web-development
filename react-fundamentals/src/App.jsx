@@ -12,6 +12,7 @@ import SearchBar from "./SearchBar";
 import ProductList from "./ProductList";
 import ShoppingList from "./ShoppingList";
 import SearchList from "./SearchList";
+import ExpenseTracker from "./ExpenseTracker";
 const products = [
   {
     id: 1,
@@ -81,6 +82,7 @@ function App() {
   return (
     <div>
       <Header title="Gaurav's React App" />
+      <ExpenseTracker/>
       <form onSubmit={handleAddTask}>
         <input
           value={newTask}

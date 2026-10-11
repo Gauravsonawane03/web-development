@@ -9,7 +9,6 @@ Build strong frontend and backend development skills and eventually develop prod
 ## Technology Roadmap
 
 ### Frontend
-
 - HTML
 - CSS
 - JavaScript
@@ -17,14 +16,12 @@ Build strong frontend and backend development skills and eventually develop prod
 - React
 
 ### Backend
-
 - Node.js
 - Express.js
 - REST APIs
 - PostgreSQL
 
 ### Supporting Skills
-
 - Git & GitHub
 - Debugging
 - Testing
@@ -36,7 +33,6 @@ Build strong frontend and backend development skills and eventually develop prod
 ## Progress
 
 ### HTML
-
 - [x] HTML fundamentals
 - [x] Semantic HTML
 - [x] Links and images
@@ -48,7 +44,6 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Basic page structure
 
 ### CSS
-
 - [x] CSS fundamentals
 - [x] Selectors
 - [x] Cascade and specificity
@@ -64,7 +59,6 @@ Build strong frontend and backend development skills and eventually develop prod
 - [x] Relative CSS units
 
 ### JavaScript
-
 - [x] Fundamentals
 - [x] DOM manipulation
 - [x] Events
@@ -78,7 +72,6 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Modern JavaScript
 
 ### TypeScript
-
 - [ ] Fundamentals
 - [ ] Types
 - [ ] Interfaces
@@ -86,7 +79,6 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Type-safe application development
 
 ### React
-
 - [x] Components
 - [ ] Props and state
 - [ ] Hooks
@@ -95,7 +87,6 @@ Build strong frontend and backend development skills and eventually develop prod
 - [ ] Application architecture
 
 ### Backend
-
 - [ ] Node.js
 - [ ] Express.js
 - [ ] REST APIs
@@ -107,41 +98,24 @@ Build strong frontend and backend development skills and eventually develop prod
 
 ## Daily Learning Log
 
-### 10 October 2026 — React Task Tracker
+### 11 October 2026 — React Expense Tracker
 
-- Built a Task Tracker feature as a fresh React implementation exercise.
-- Used `useState` to manage the task array, selected filter, input text, and validation error.
-- Implemented a controlled input using `value` and `onChange`.
-- Added form submission and empty-input validation.
-- Created task objects with an ID, task name, and `completed` status.
-- Updated the task array immutably using `setTasks` and the spread operator.
-- Rendered tasks using `.map()` and React list keys.
-- Used conditional rendering and a ternary expression to display Pending and Completed statuses.
-- Implemented All, Pending, and Completed filters using `.filter()` and derived data.
-- Added a completion toggle that updates the selected task without mutating the existing object.
-- Added a message for an empty task list or a filter with no matching tasks.
-- Debugged JSX syntax errors, a case-sensitive setter-name mismatch, and React state-update behavior.
-- Tested task creation, status changes, and filtering in the browser.
+- Created a new `ExpenseTracker.jsx` component to practise React through a fresh feature rather than repeating the previous task and search-list exercises.
+- Used `useState` to manage the expenses array, description input, amount input, and selected category.
+- Implemented controlled description and amount inputs using `value` and `onChange`.
+- Added a category selector with options for all categories, Food, and Travel.
+- Implemented form submission and basic validation to prevent adding expenses with empty descriptions or amounts.
+- Created expense objects containing an ID, description, amount, and category.
+- Added expenses to the existing array immutably using the state setter and spread syntax.
+- Rendered expense entries using `.map()` and unique React keys.
+- Calculated the total expense amount using `.reduce()`, converting input values to numbers with `Number()`.
+- Tested adding multiple expenses and verified the total calculation.
+- Tested category selection and confirmed the feature worked as expected.
+- Debugged issues involving controlled input wiring, object property names, and form submission.
 
-The core Task Tracker functionality was completed successfully. The exercise provided guided practice with React state, controlled inputs, event handling, immutable updates, list rendering, derived data, and conditional rendering. Substantial guidance was required for implementation and debugging, so independent implementation and retention remain unproven. Further blank-page retrieval and independent variations are needed before considering these concepts mastered.
+The Expense Tracker feature was completed and tested successfully. The exercise provided guided practice with React state, controlled inputs, form handling, validation, object-based data, immutable array updates, list rendering, and total calculation with `.reduce()`.
 
-### 9 October 2026 — React Retrieval + Shopping List Filtering
-
-- Started a fresh Shopping List exercise to strengthen React implementation ability without copying the previous Product Search implementation.
-- Worked with parent-owned state and child components receiving data and callback functions through props.
-- Implemented a controlled input using `value` and `onChange`.
-- Used `event.target.value` and a callback prop to communicate input changes to the parent.
-- Passed the shopping items and search text from the parent to the child component.
-- Derived `filteredList` from the existing items and search text using `.filter()`.
-- Implemented case-insensitive filtering using `toLowerCase()` and `includes()`.
-- Rendered filtered items using `.map()` and used item IDs as React list keys.
-- Added conditional rendering for the empty-results message.
-- Debugged component integration issues, including an undefined variable and incorrect prop wiring.
-- Corrected the prop passed to the shopping list so it received the search state rather than a component reference.
-- Tested the feature in the browser, including matching searches, no-match searches, and clearing the input.
-- Confirmed that the existing React UI continued to render alongside the new feature.
-
-The Shopping List filtering feature was completed and tested successfully. The exercise reinforced controlled inputs, props, callback-based communication, derived data, and conditional rendering. However, component wiring required debugging guidance, so independent implementation and retention remain unproven. Further blank-page retrieval is needed before considering these concepts independently mastered.
+Implementation required substantial guidance, particularly for wiring state and understanding `.reduce()`. This counts as **guided practice completed**, not independent mastery. Future retrieval exercises should test whether these concepts can be implemented without step-by-step assistance.
 
 ## Projects
 
